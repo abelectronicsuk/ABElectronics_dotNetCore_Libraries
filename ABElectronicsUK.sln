@@ -1,0 +1,117 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29609.76
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ABElectronicsUK", "ABElectronicsUK\ABElectronicsUK.csproj", "{DC3E05E1-D0B4-4B2F-9A75-43C73A514E3D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Demos", "Demos", "{B3DD928E-FB89-462C-AF72-5B5B4FC565E7}"
+	ProjectSection(SolutionItems) = preProject
+		Demos\README.md = Demos\README.md
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tester", "Demos\Tester\Tester.csproj", "{7451A70A-7516-4220-B7DD-9596FD0E3FDB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ADCDACPi", "ADCDACPi", "{C842D6D4-79E0-4488-B99A-20E7C476705A}"
+	ProjectSection(SolutionItems) = preProject
+		Demos\ADCDACPi\demo_adcread.cs = Demos\ADCDACPi\demo_adcread.cs
+		Demos\ADCDACPi\demo_adcspeed.cs = Demos\ADCDACPi\demo_adcspeed.cs
+		Demos\ADCDACPi\demo_dacsinewave.cs = Demos\ADCDACPi\demo_dacsinewave.cs
+		Demos\ADCDACPi\demo_dacspeed.cs = Demos\ADCDACPi\demo_dacspeed.cs
+		Demos\ADCDACPi\demo_dacwrite.cs = Demos\ADCDACPi\demo_dacwrite.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ADCPi", "ADCPi", "{2212BB7E-959B-46E3-9AC8-1AD1EA2EE0D5}"
+	ProjectSection(SolutionItems) = preProject
+		Demos\ADCPi\demo_readvoltage.cs = Demos\ADCPi\demo_readvoltage.cs
+		Demos\ADCPi\demo_speedtest.cs = Demos\ADCPi\demo_speedtest.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ADCDifferentialPi", "ADCDifferentialPi", "{E1A05FDC-63B7-48D4-BE0C-8459D3D01CAA}"
+	ProjectSection(SolutionItems) = preProject
+		Demos\ADCDifferentialPi\demo_readvoltage.cs = Demos\ADCDifferentialPi\demo_readvoltage.cs
+		Demos\ADCDifferentialPi\demo_speedtest.cs = Demos\ADCDifferentialPi\demo_speedtest.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ExpanderPi", "ExpanderPi", "{55C91710-FBC7-4D39-8C9B-A36B3799E892}"
+	ProjectSection(SolutionItems) = preProject
+		Demos\ExpanderPi\demo_adcread.cs = Demos\ExpanderPi\demo_adcread.cs
+		Demos\ExpanderPi\demo_adcspeed.cs = Demos\ExpanderPi\demo_adcspeed.cs
+		Demos\ExpanderPi\demo_dacsinewave.cs = Demos\ExpanderPi\demo_dacsinewave.cs
+		Demos\ExpanderPi\demo_dacspeed.cs = Demos\ExpanderPi\demo_dacspeed.cs
+		Demos\ExpanderPi\demo_dacwrite.cs = Demos\ExpanderPi\demo_dacwrite.cs
+		Demos\ExpanderPi\demo_iointerrupts.cs = Demos\ExpanderPi\demo_iointerrupts.cs
+		Demos\ExpanderPi\demo_ioread.cs = Demos\ExpanderPi\demo_ioread.cs
+		Demos\ExpanderPi\demo_iowrite.cs = Demos\ExpanderPi\demo_iowrite.cs
+		Demos\ExpanderPi\demo_rtcdate.cs = Demos\ExpanderPi\demo_rtcdate.cs
+		Demos\ExpanderPi\demo_rtcmemory.cs = Demos\ExpanderPi\demo_rtcmemory.cs
+		Demos\ExpanderPi\demo_rtcout.cs = Demos\ExpanderPi\demo_rtcout.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IOPi", "IOPi", "{C9BD7A4B-05FC-4EA6-8C38-1F96F3CC1833}"
+	ProjectSection(SolutionItems) = preProject
+		Demos\IOPi\demo_iointerrupts.cs = Demos\IOPi\demo_iointerrupts.cs
+		Demos\IOPi\demo_ioread.cs = Demos\IOPi\demo_ioread.cs
+		Demos\IOPi\demo_iowrite.cs = Demos\IOPi\demo_iowrite.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RTCPi", "RTCPi", "{455928DD-526A-4FF4-A7AF-2DFDF7088828}"
+	ProjectSection(SolutionItems) = preProject
+		Demos\RTCPi\demo_rtcdate.cs = Demos\RTCPi\demo_rtcdate.cs
+		Demos\RTCPi\demo_rtcmemory.cs = Demos\RTCPi\demo_rtcmemory.cs
+		Demos\RTCPi\demo_rtcout.cs = Demos\RTCPi\demo_rtcout.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "I2CSwitch", "I2CSwitch", "{4DE9FA13-20BA-4A77-9E0B-845CFB82C68D}"
+	ProjectSection(SolutionItems) = preProject
+		Demos\I2CSwitch\demo_switch.cs = Demos\I2CSwitch\demo_switch.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ServoPi", "ServoPi", "{F586C51D-9E37-4366-B7E9-2EF90BF525F9}"
+	ProjectSection(SolutionItems) = preProject
+		Demos\ServoPi\demo_pwm.cs = Demos\ServoPi\demo_pwm.cs
+		Demos\ServoPi\demo_servomove.cs = Demos\ServoPi\demo_servomove.cs
+		Demos\ServoPi\demo_setallcalladdress.cs = Demos\ServoPi\demo_setallcalladdress.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8ED3F1FE-8684-4607-B49A-DF1AA6529CE2}"
+	ProjectSection(SolutionItems) = preProject
+		CHANGELOG.md = CHANGELOG.md
+		CODE_OF_CONDUCT.md = CODE_OF_CONDUCT.md
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DC3E05E1-D0B4-4B2F-9A75-43C73A514E3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC3E05E1-D0B4-4B2F-9A75-43C73A514E3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC3E05E1-D0B4-4B2F-9A75-43C73A514E3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC3E05E1-D0B4-4B2F-9A75-43C73A514E3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7451A70A-7516-4220-B7DD-9596FD0E3FDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7451A70A-7516-4220-B7DD-9596FD0E3FDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7451A70A-7516-4220-B7DD-9596FD0E3FDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7451A70A-7516-4220-B7DD-9596FD0E3FDB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7451A70A-7516-4220-B7DD-9596FD0E3FDB} = {B3DD928E-FB89-462C-AF72-5B5B4FC565E7}
+		{C842D6D4-79E0-4488-B99A-20E7C476705A} = {B3DD928E-FB89-462C-AF72-5B5B4FC565E7}
+		{2212BB7E-959B-46E3-9AC8-1AD1EA2EE0D5} = {B3DD928E-FB89-462C-AF72-5B5B4FC565E7}
+		{E1A05FDC-63B7-48D4-BE0C-8459D3D01CAA} = {B3DD928E-FB89-462C-AF72-5B5B4FC565E7}
+		{55C91710-FBC7-4D39-8C9B-A36B3799E892} = {B3DD928E-FB89-462C-AF72-5B5B4FC565E7}
+		{C9BD7A4B-05FC-4EA6-8C38-1F96F3CC1833} = {B3DD928E-FB89-462C-AF72-5B5B4FC565E7}
+		{455928DD-526A-4FF4-A7AF-2DFDF7088828} = {B3DD928E-FB89-462C-AF72-5B5B4FC565E7}
+		{4DE9FA13-20BA-4A77-9E0B-845CFB82C68D} = {B3DD928E-FB89-462C-AF72-5B5B4FC565E7}
+		{F586C51D-9E37-4366-B7E9-2EF90BF525F9} = {B3DD928E-FB89-462C-AF72-5B5B4FC565E7}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B21B2D57-C187-4E7F-A1A1-FACDBAE5DE5F}
+	EndGlobalSection
+EndGlobal

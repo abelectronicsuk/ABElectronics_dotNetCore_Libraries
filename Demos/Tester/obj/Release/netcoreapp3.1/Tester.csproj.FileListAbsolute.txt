@@ -1,0 +1,17 @@
+U:\Pi_Development\ABElectronics_dotNetCore_Libraries\Demos\Tester\bin\Release\netcoreapp3.1\Tester.exe
+U:\Pi_Development\ABElectronics_dotNetCore_Libraries\Demos\Tester\bin\Release\netcoreapp3.1\Tester.deps.json
+U:\Pi_Development\ABElectronics_dotNetCore_Libraries\Demos\Tester\bin\Release\netcoreapp3.1\Tester.runtimeconfig.json
+U:\Pi_Development\ABElectronics_dotNetCore_Libraries\Demos\Tester\bin\Release\netcoreapp3.1\Tester.runtimeconfig.dev.json
+U:\Pi_Development\ABElectronics_dotNetCore_Libraries\Demos\Tester\bin\Release\netcoreapp3.1\Tester.dll
+U:\Pi_Development\ABElectronics_dotNetCore_Libraries\Demos\Tester\bin\Release\netcoreapp3.1\Tester.pdb
+U:\Pi_Development\ABElectronics_dotNetCore_Libraries\Demos\Tester\bin\Release\netcoreapp3.1\System.Device.Gpio.dll
+U:\Pi_Development\ABElectronics_dotNetCore_Libraries\Demos\Tester\bin\Release\netcoreapp3.1\runtimes\linux\lib\netstandard2.0\System.Device.Gpio.dll
+U:\Pi_Development\ABElectronics_dotNetCore_Libraries\Demos\Tester\bin\Release\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Device.Gpio.dll
+U:\Pi_Development\ABElectronics_dotNetCore_Libraries\Demos\Tester\bin\Release\netcoreapp3.1\ABElectronics_dotNetCore_Libraries.dll
+U:\Pi_Development\ABElectronics_dotNetCore_Libraries\Demos\Tester\bin\Release\netcoreapp3.1\ABElectronics_dotNetCore_Libraries.pdb
+U:\Pi_Development\ABElectronics_dotNetCore_Libraries\Demos\Tester\obj\Release\netcoreapp3.1\Tester.csprojAssemblyReference.cache
+U:\Pi_Development\ABElectronics_dotNetCore_Libraries\Demos\Tester\obj\Release\netcoreapp3.1\Tester.AssemblyInfoInputs.cache
+U:\Pi_Development\ABElectronics_dotNetCore_Libraries\Demos\Tester\obj\Release\netcoreapp3.1\Tester.AssemblyInfo.cs
+U:\Pi_Development\ABElectronics_dotNetCore_Libraries\Demos\Tester\obj\Release\netcoreapp3.1\Tester.csproj.CopyComplete
+U:\Pi_Development\ABElectronics_dotNetCore_Libraries\Demos\Tester\obj\Release\netcoreapp3.1\Tester.dll
+U:\Pi_Development\ABElectronics_dotNetCore_Libraries\Demos\Tester\obj\Release\netcoreapp3.1\Tester.pdb
