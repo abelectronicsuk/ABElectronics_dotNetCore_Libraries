@@ -2,8 +2,7 @@
 #    folder   #
 ###############
 /**/DROP/
+/**/OBJ/
 /**/TEMP/
 /**/packages/
-/**/bin/
-/**/obj/
 _site
