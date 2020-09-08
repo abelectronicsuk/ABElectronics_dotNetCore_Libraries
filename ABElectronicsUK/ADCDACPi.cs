@@ -43,7 +43,7 @@ namespace ABElectronicsUK
                 // Create SPI initialization settings for the ADC
                 var adcSettings = new SpiConnectionSettings(SPI_BUS_ID, ADC_CHIP_SELECT_LINE)
                     {
-                        ClockFrequency = 10000000, // SPI clock frequency of 10MHz
+                        ClockFrequency = 1100000, // SPI clock frequency of 1.1MHz
                         Mode = SpiMode.Mode0
                     };
 
