@@ -1,5 +1,5 @@
 ﻿/*
-ABElectronics ADC-DAC Pi 2-Channel ADC, 2-Channel DAC 
+AB Electronics UK ADC DAC Pi 2-Channel ADC, 2-Channel DAC 
 DAC sine wave generator demo
 
 this demo generates a sine wave on the DAC output
@@ -13,7 +13,7 @@ namespace Tester
 {
     class Program
     {
-        // Create a new instance of teh ADCDACPi object
+        // Create a new instance of the ADCDACPi object
         ADCDACPi adcdac = new ADCDACPi();
 
         static void Main(string[] args)
@@ -25,7 +25,7 @@ namespace Tester
 
         private void AdcDac_Connect()
         {
-            // Connect to the ADCDAC Pi and wait for the Connected event
+            // Connect to the ADC DAC Pi and wait for the Connected event
             adcdac.Connected += AdcDac_Connected;
             adcdac.Connect();
         }

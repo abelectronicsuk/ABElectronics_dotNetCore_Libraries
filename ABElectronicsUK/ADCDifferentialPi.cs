@@ -8,7 +8,7 @@ namespace ABElectronicsUK
     /// </summary>
     public class ADCDifferentialPi : IDisposable
     {
-        // create byte array and fill with initial values to define size
+        // create a byte array and fill it with initial values to define the size
 
         private Byte[] __adcreading = {0, 0, 0, 0};
         private byte bitrate = 18; // current bit rate
@@ -35,7 +35,7 @@ namespace ABElectronicsUK
         private bool signbit;
 
         /// <summary>
-        ///     Create an instance of a Delta-Sigma Pi bus.
+        ///     Create an instance of an ADC Differential Pi bus.
         /// </summary>
         /// <param name="i2caddress1">I2C address for the U1 (channels 1 - 4)</param>
         /// <param name="i2caddress2">I2C address for the U2 (channels 5 - 8)</param>
@@ -101,7 +101,7 @@ namespace ABElectronicsUK
         }
 
         /// <summary>
-        ///     Event occurs when connection is made.
+        ///     Event occurs when a connection is made.
         /// </summary>
         public event EventHandler Connected;
 
@@ -111,7 +111,7 @@ namespace ABElectronicsUK
         /// <param name="channel">ADC channel, 1 - 8</param>
         private void SetChannel(byte channel)
         {
-            // Checks to see if the selected channel is already the current channel.
+            // Check to see if the selected channel is already the current channel.
             // If not then update the appropriate config to the new channel settings.
 
             if (channel < 5 && channel != currentchannel1)
@@ -274,7 +274,7 @@ namespace ABElectronicsUK
                 x++;
             } while (true);
 
-            // extract the returned bytes and combine in the correct order
+            // extract the returned bytes and combine them in the correct order
             switch (bitrate)
             {
                 case 18:

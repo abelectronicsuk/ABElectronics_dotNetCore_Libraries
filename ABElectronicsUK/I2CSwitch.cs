@@ -91,7 +91,7 @@ namespace ABElectronicsUK
         }
 
         /// <summary>
-        ///     Event occurs when connection is made.
+        ///     Event occurs when a connection is made.
         /// </summary>
         public event EventHandler Connected;
 

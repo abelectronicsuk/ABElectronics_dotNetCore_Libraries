@@ -1,5 +1,5 @@
 ﻿/*
-ABElectronics ADC Differential Pi 8-Channel ADC speed test demo
+AB Electronics UK ADC Differential Pi 8-Channel ADC speed test demo
 
 Initialise the ADC device using the default addresses and test the
 samples per second at the selected bit rate
@@ -13,7 +13,7 @@ namespace Tester
 {
     class Program
     {
-        // Create a new instance of the ADCPi object with I2C addresses 0x68 and 0x69
+        // Create a new instance of the ADCDifferentialPi object with I2C addresses 0x68 and 0x69
         ADCDifferentialPi adc = new ADCDifferentialPi(0x68, 0x69);
 
         static void Main(string[] args)
@@ -50,7 +50,7 @@ namespace Tester
 
             while (counter < totalsamples)
             {
-                // read the voltage from channel 1 and display on the screen
+                // read the voltage from channel 1 and display it on the screen
                 readarray[counter] = adc.ReadVoltage(1);
 
                 counter += 1;

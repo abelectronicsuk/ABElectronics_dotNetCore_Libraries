@@ -1,5 +1,5 @@
 ﻿/*
-ABElectronics Expander Pi | Digital I/O Write Demo
+AB Electronics UK Expander Pi | Digital I/O Write Demo
 
 This example uses the IOWritePin and IOWritePort methods to switch the pins
 on and off on the I/O bus.
@@ -25,7 +25,7 @@ namespace Tester
 
         private void ExpanderPi_Connect()
         {
-            // Connect to the ExpanderPi Pi and wait for the Connected event
+            // Connect to the Expander Pi and wait for the Connected event
             expander.Connected += ExpanderPi_Connected;
             expander.Connect();
         }
@@ -55,7 +55,7 @@ namespace Tester
                 // turn off all of the pins on bank 1
                 expander.IOWritePort(1, 0x00);
 
-                // now turn on all of the leds in turn by writing to one pin at a time
+                // now turn on all of the LEDs in turn by writing to one pin at a time
                 expander.IOWritePin(9, true);
 
                 Thread.Sleep(100); // wait 100ms
@@ -86,7 +86,7 @@ namespace Tester
 
                 expander.IOWritePin(16, true);
 
-                // and turn off all of the leds in turn by writing to one pin at a time
+                // and turn off all of the LEDs in turn by writing to one pin at a time
                 expander.IOWritePin(9, false);
 
                 Thread.Sleep(100); // wait 100ms

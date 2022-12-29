@@ -1,5 +1,5 @@
 ﻿/*
-ABElectronics ADCDAC Pi 2-Channel ADC, 2-Channel DAC | DAC Speed Demo
+AB Electronics UK ADC DAC Pi 2-Channel ADC, 2-Channel DAC | DAC Speed Demo
 
 this demo will output a 3.3V square wave, testing the maximum speed of the DAC
 */
@@ -12,7 +12,7 @@ namespace Tester
 {
     class Program
     {
-        // Create a new instance of teh ADCDACPi object
+        // Create a new instance of the ADCDACPi object
         ADCDACPi adcdac = new ADCDACPi();
 
         static void Main(string[] args)
@@ -24,7 +24,7 @@ namespace Tester
 
         private void AdcDac_Connect()
         {
-            // Connect to the ADCDAC Pi and wait for the Connected event
+            // Connect to the ADC DAC Pi and wait for the Connected event
             adcdac.Connected += AdcDac_Connected;
             adcdac.Connect();
         }

@@ -1,7 +1,7 @@
 ﻿/*
-ABElectronics Servo Pi | Set All Call Address
+AB Electronics UK Servo Pi | Set All Call Address
 
-This demo shows how to set the i2c address for the all call functionality and enable it.
+This demo shows how to set the i2c address for the all-call functionality and enable it.
 */
 
 using System;
@@ -31,7 +31,7 @@ namespace Tester
 
         private void ServoPi_Connected(object sender, EventArgs e)
         {
-            // Set the all call address to 0x60
+            // Set the all-call address to 0x60
             servo.SetAllCallAddress(0x60);
 
             // Enable the All Call address

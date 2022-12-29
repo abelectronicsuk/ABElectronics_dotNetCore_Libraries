@@ -4,7 +4,7 @@ using System.Device.Spi;
 namespace ABElectronicsUK
 {
     /// <summary>
-    ///     Class for accessing the ADCDAC Pi from AB Electronics UK.
+    ///     Class for accessing the ADC DAC Pi from AB Electronics UK.
     /// </summary>
     public class ADCDACPi : IDisposable
     {
@@ -29,7 +29,7 @@ namespace ABElectronicsUK
         System.Runtime.InteropServices.SafeHandle handle = new Microsoft.Win32.SafeHandles.SafeFileHandle(IntPtr.Zero, true);
 
         /// <summary>
-        ///     Open a connection to the ADCDAC Pi.
+        ///     Open a connection to the ADC DAC Pi.
         /// </summary>
         public void Connect()
         {
@@ -73,7 +73,7 @@ namespace ABElectronicsUK
         }
 
         /// <summary>
-        ///     Event occurs when connection is made.
+        ///     Event occurs when a connection is made.
         /// </summary>
         public event EventHandler Connected;
 

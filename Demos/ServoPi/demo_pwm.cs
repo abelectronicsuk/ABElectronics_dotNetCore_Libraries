@@ -1,5 +1,5 @@
 ﻿/*
-ABElectronics Servo Pi | PWM output demo
+AB Electronics UK Servo Pi | PWM output demo
 
 This demo shows how to set a 1KHz output frequency and change the pulse width between the minimum and maximum values
 */
@@ -31,7 +31,7 @@ namespace Tester
 
         private void ServoPi_Connected(object sender, EventArgs e)
         {
-            // Set PWM frequency to 1 Khz
+            // Set PWM frequency to 1Khz
             servo.SetPWMFreqency(1000);
 
             // Increase and decrease the PWM duty cycle in increments of 5

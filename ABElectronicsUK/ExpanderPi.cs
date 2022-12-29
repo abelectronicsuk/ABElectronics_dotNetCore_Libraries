@@ -1,6 +1,4 @@
-﻿// TODO: Expander Pi
-
-using System;
+﻿using System;
 using System.Threading.Tasks;
 using System.Device.Spi;
 using System.Device.I2c;
@@ -30,7 +28,7 @@ namespace ABElectronicsUK
 
         private readonly ABE_Helpers helper = new ABE_Helpers();
 
-        // Define IO registers values from datasheet
+        // Define IO registers values from the datasheet
 
         private const byte IODIRA = 0x00; // IO direction A
         private const byte IODIRB = 0x01; // IO direction B
@@ -159,7 +157,7 @@ namespace ABElectronicsUK
                     // Set IsConnected to true
                     IsConnected = true;
 
-                    // i2c bus is connected so set up the initial configuration for the IO Pi
+                    // i2c bus is connected, so set up the initial configuration for the Expander Pi IO port
                     helper.WriteI2CByte(IOi2cbus, IOCON, config);
                     
                     portaval = helper.ReadI2CByte(IOi2cbus, GPIOA);
@@ -188,7 +186,7 @@ namespace ABElectronicsUK
         }
 
         /// <summary>
-        ///     Event occurs when connection is made.
+        ///     Event occurs when a connection is made.
         /// </summary>
         public event EventHandler Connected;
 
@@ -208,15 +206,15 @@ namespace ABElectronicsUK
         ///     Read the voltage from the selected <paramref name="channel" /> on the ADC.
         /// </summary>
         /// <param name="channel">1 to 8</param>
-        /// <param name="mode">1 = Single Ended Input, 2 = Differential Input</param>
-        /// When in differential mode setting channel to 1 will make IN1 = IN+ and IN2 = IN-
-        /// When in differential mode setting channel to 2 will make IN1 = IN- and IN2 = IN+
-        /// When in differential mode setting channel to 3 will make IN3 = IN+ and IN4 = IN-
-        /// When in differential mode setting channel to 4 will make IN3 = IN- and IN4 = IN+
-        /// When in differential mode setting channel to 5 will make IN5 = IN+ and IN6 = IN-
-        /// When in differential mode setting channel to 6 will make IN5 = IN- and IN6 = IN+
-        /// When in differential mode setting channel to 7 will make IN7 = IN+ and IN8 = IN-
-        /// When in differential mode setting channel to 8 will make IN7 = IN- and IN8 = IN+
+        /// <param name="mode">1 = Single-Ended Input, 2 = Differential Input</param>
+        /// When in differential mode, setting channel to 1 will make IN1 = IN+ and IN2 = IN-
+        /// When in differential mode, setting channel to 2 will make IN1 = IN- and IN2 = IN+
+        /// When in differential mode, setting channel to 3 will make IN3 = IN+ and IN4 = IN-
+        /// When in differential mode, setting channel to 4 will make IN3 = IN- and IN4 = IN+
+        /// When in differential mode, setting channel to 5 will make IN5 = IN+ and IN6 = IN-
+        /// When in differential mode, setting channel to 6 will make IN5 = IN- and IN6 = IN+
+        /// When in differential mode, setting channel to 7 will make IN7 = IN+ and IN8 = IN-
+        /// When in differential mode, setting channel to 8 will make IN7 = IN- and IN8 = IN+
         /// <returns>voltage</returns>
         public double ADCReadVoltage(byte channel, byte mode)
         {
@@ -235,15 +233,15 @@ namespace ABElectronicsUK
         ///     Read the raw value from the selected <paramref name="channel" /> on the ADC.
         /// </summary>
         /// <param name="channel">1 to 8</param>
-        /// <param name="mode">1 = Single Ended Input, 2 = Differential Input</param>
-        /// When in differential mode setting channel to 1 will make IN1 = IN+ and IN2 = IN-
-        /// When in differential mode setting channel to 2 will make IN1 = IN- and IN2 = IN+
-        /// When in differential mode setting channel to 3 will make IN3 = IN+ and IN4 = IN-
-        /// When in differential mode setting channel to 4 will make IN3 = IN- and IN4 = IN+
-        /// When in differential mode setting channel to 5 will make IN5 = IN+ and IN6 = IN-
-        /// When in differential mode setting channel to 6 will make IN5 = IN- and IN6 = IN+
-        /// When in differential mode setting channel to 7 will make IN7 = IN+ and IN8 = IN-
-        /// When in differential mode setting channel to 8 will make IN7 = IN- and IN8 = IN+
+        /// <param name="mode">1 = Single-Ended Input, 2 = Differential Input</param>
+        /// When in differential mode, setting channel to 1 will make IN1 = IN+ and IN2 = IN-
+        /// When in differential mode, setting channel to 2 will make IN1 = IN- and IN2 = IN+
+        /// When in differential mode, setting channel to 3 will make IN3 = IN+ and IN4 = IN-
+        /// When in differential mode, setting channel to 4 will make IN3 = IN- and IN4 = IN+
+        /// When in differential mode, setting channel to 5 will make IN5 = IN+ and IN6 = IN-
+        /// When in differential mode, setting channel to 6 will make IN5 = IN- and IN6 = IN+
+        /// When in differential mode, setting channel to 7 will make IN7 = IN+ and IN8 = IN-
+        /// When in differential mode, setting channel to 8 will make IN7 = IN- and IN8 = IN+
         /// <returns>Integer</returns>
         public int ADCReadRaw(byte channel, byte mode)
         {
@@ -901,7 +899,7 @@ namespace ABElectronicsUK
 
         /// <summary>
         /// Enable or disable the clock output pin.
-        /// Set output as true of false.  Gets output state as true or false.
+        /// Set output as true or false.  Gets output state as true or false.
         /// </summary>
         public bool RTCOutput
         {
@@ -929,7 +927,7 @@ namespace ABElectronicsUK
         }
 
         /// <summary>
-        ///     Get or set the frequency of the output pin square-wave.
+        ///     Get or set the frequency of the output pin square wave.
         ///     Options are: 1 = 1Hz, 2 = 4.096KHz, 3 = 8.192KHz, 4 = 32.768KHz
         /// </summary>
         /// 
@@ -938,7 +936,7 @@ namespace ABElectronicsUK
             get
             {
                 CheckConnected();
-                // get the control register from the rtc
+                // get the control register from the RTC
                 config = helper.ReadI2CByte(RTCi2cbus, CONTROL);
 
                 // extract bits rs0 and rs1

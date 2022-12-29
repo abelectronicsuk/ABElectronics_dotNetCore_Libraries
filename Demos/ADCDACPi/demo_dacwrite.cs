@@ -1,5 +1,5 @@
 ﻿/*
-ABElectronics ADCDAC Pi 2-Channel ADC, 2-Channel DAC | DAC Write Demo
+AB Electronics UK ADC DAC Pi 2-Channel ADC, 2-Channel DAC | DAC Write Demo
 
 this demo will generate a 1.5V p-p square wave at 1Hz
 */
@@ -12,7 +12,7 @@ namespace Tester
 {
     class Program
     {
-        // Create a new instance of teh ADCDACPi object
+        // Create a new instance of the ADCDACPi object
         ADCDACPi adcdac = new ADCDACPi();
 
         private Timer timer;
@@ -27,7 +27,7 @@ namespace Tester
 
         private void AdcDac_Connect()
         {
-            // Connect to the ADCDAC Pi and wait for the Connected event
+            // Connect to the ADC DAC Pi and wait for the Connected event
             adcdac.Connected += AdcDac_Connected;
             adcdac.Connect();
         }

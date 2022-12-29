@@ -1,7 +1,7 @@
 ﻿/*
-ABElectronics I2CSwitch | Channel select demo
+AB Electronics UK I2CSwitch | Channel select demo
 
-This demo shows how to set I2C output channel on the I2C switch.
+This demo shows how to set the I2C output channel on the I2C switch.
 */
 
 using System;
@@ -11,7 +11,7 @@ namespace Tester
 {
     class Program
     {
-        // Create a new instance of the ADCPi object with I2C addresses 0x68 and 0x69
+        // Create a new instance of the I2CSwitch object with I2C addresses 0x68 and 0x69
         I2CSwitch i2cswitch = new I2CSwitch();
 
         static void Main(string[] args)

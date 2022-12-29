@@ -1,5 +1,5 @@
 ﻿/*
-ABElectronics Expander Pi | IO Interrupts Demo
+AB Electronics UK Expander Pi | IO Interrupts Demo
 
 This example shows how to use the interrupt methods on the IO port.
 Both ports will be set as inputs with pull-ups enabled and the 
@@ -30,7 +30,7 @@ namespace Tester
 
         private void ExpanderPi_Connect()
         {
-            // Connect to the ExpanderPi Pi and wait for the Connected event
+            // Connect to the Expander Pi and wait for the Connected event
             expander.Connected += ExpanderPi_Connected;
             expander.Connect();
         }
@@ -38,7 +38,7 @@ namespace Tester
 
         private void ExpanderPi_Connected(object sender, EventArgs e)
         {
-            // Set all pins on the IO bus to be inputs with internal pull-ups enabled.
+            // Set all pins on the IO bus as inputs with internal pull-ups enabled.
 
             expander.IOSetPortPullups(0, 0xFF);
             expander.IOSetPortPullups(1, 0xFF);
@@ -49,7 +49,7 @@ namespace Tester
             expander.IOInvertPort(0, 0xFF);
             expander.IOInvertPort(1, 0xFF);
 
-            // Set the interrupt polarity to be active high and mirroring disabled, so
+            // Set the interrupt polarity as active high and mirroring disabled, so
             // pins 1 to 8 trigger INT A and pins 9 to 16 trigger INT B
             expander.IOSetInterruptPolarity(1);
             expander.IOMirrorInterrupts(0);
@@ -58,7 +58,7 @@ namespace Tester
             expander.IOSetInterruptDefaults(0, 0x00);
             expander.IOSetInterruptDefaults(1, 0x00);
 
-            // Set the interrupt type to be 1 for ports A and B so an interrupt is
+            // Set the interrupt type as 1 for ports A and B so an interrupt is
             // fired when the pin matches the default value
             expander.IOSetInterruptType(0, 0xFF);
             expander.IOSetInterruptType(1, 0xFF);
@@ -76,7 +76,7 @@ namespace Tester
             {
 
                 // read the interrupt status for each port.  
-                // If the status is not 0 then an interrupt has occured on one of the pins 
+                // If the status is not 0 an interrupt has occurred on one of the pins 
                 // so read the value from the interrupt capture.
 
                 if (expander.IOReadInterruptStatus(0) != 0)

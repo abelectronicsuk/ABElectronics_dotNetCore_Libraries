@@ -1,5 +1,5 @@
 ﻿/*
-ABElectronics Expander Pi | ADC Read Demo
+AB Electronics UK Expander Pi | ADC Read Demo
 
 this demo reads the voltage from the 8 ADC inputs
 */
@@ -23,7 +23,7 @@ namespace Tester
 
         private void ExpanderPi_Connect()
         {
-            // Connect to the ExpanderPi Pi and wait for the Connected event
+            // Connect to the Expander Pi and wait for the Connected event
             expander.Connected += ExpanderPi_Connected;
             expander.Connect();
         }
@@ -31,7 +31,7 @@ namespace Tester
 
         private void ExpanderPi_Connected(object sender, EventArgs e)
         {
-            // set the reference voltage to the on board voltage reference of 4.096V.
+            // set the reference voltage to the onboard voltage reference of 4.096V.
             expander.ADCReferenceVoltage = 4.096;
 
             // Clear the console window
@@ -40,7 +40,7 @@ namespace Tester
 
             while (true)
             {
-                // Read ADC channels 1 to 8 in single ended mode and write them to the console
+                // Read ADC channels 1 to 8 in single-ended mode and write them to the console
                 Console.WriteLine("ADC Channel 1: " + expander.ADCReadVoltage(1, 1).ToString("N6"));
                 Console.WriteLine("ADC Channel 2: " + expander.ADCReadVoltage(2, 1).ToString("N6"));
                 Console.WriteLine("ADC Channel 3: " + expander.ADCReadVoltage(3, 1).ToString("N6"));

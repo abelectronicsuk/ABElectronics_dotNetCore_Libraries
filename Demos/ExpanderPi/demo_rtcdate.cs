@@ -1,7 +1,7 @@
 ﻿/*
-ABElectronics Expander Pi | Date Demo
+AB Electronics UK Expander Pi | Date Demo
 
-This demo shows how to set the current time to the RTC and read the date and time on the Expander Pi real-time clock at 1 second intervals
+This demo shows how to set the current time to the RTC and read the date and time on the Expander Pi real-time clock at 1-second intervals
 */
 
 using System;
@@ -26,7 +26,7 @@ namespace Tester
 
         private void ExpanderPi_Connect()
         {
-            // Connect to the ExpanderPi Pi and wait for the Connected event
+            // Connect to the Expander Pi and wait for the Connected event
             expander.Connected += ExpanderPi_Connected;
             expander.Connect();
         }

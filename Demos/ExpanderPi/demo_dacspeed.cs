@@ -1,5 +1,5 @@
 ﻿/*
-ABElectronics Expander Pi | DAC Speed Demo
+AB Electronics UK Expander Pi | DAC Speed Demo
 
 this demo will output a 3.3V square wave, testing the maximum speed of the DAC
 */
@@ -23,7 +23,7 @@ namespace Tester
 
         private void ExpanderPi_Connect()
         {
-            // Connect to the ExpanderPi Pi and wait for the Connected event
+            // Connect to the Expander Pi and wait for the Connected event
             expander.Connected += ExpanderPi_Connected;
             expander.Connect();
         }

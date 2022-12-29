@@ -1,5 +1,5 @@
 ﻿/*
-ABElectronics Expander Pi | DAC Write Demo
+AB Electronics UK Expander Pi | DAC Write Demo
 
 this demo will generate a 1.5V p-p square wave at 1Hz
 */
@@ -27,7 +27,7 @@ namespace Tester
 
         private void ExpanderPi_Connect()
         {
-            // Connect to the ExpanderPi Pi and wait for the Connected event
+            // Connect to the Expander Pi and wait for the Connected event
             expander.Connected += ExpanderPi_Connected;
             expander.Connect();
         }

@@ -1,5 +1,5 @@
 ﻿/*
-ABElectronics ADC Pi 8-Channel ADC speed test demo
+AB Electronics UK ADC Pi 8-Channel ADC speed test demo
 
 Initialise the ADC device using the default addresses and test the
 samples per second at the selected bit rate
@@ -50,7 +50,7 @@ namespace Tester
 
             while (counter < totalsamples)
             {
-                // read the voltage from channel 1 and display on the screen
+                // read the voltage from channel 1 and display it on the screen
                 readarray[counter] = adc.ReadVoltage(1);
 
                 counter += 1;

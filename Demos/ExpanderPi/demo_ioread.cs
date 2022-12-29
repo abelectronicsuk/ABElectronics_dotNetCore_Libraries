@@ -1,5 +1,5 @@
 ﻿/*
-ABElectronics Expander Pi | Digital I/O Read Demo
+AB Electronics UK Expander Pi | Digital I/O Read Demo
 
 This example reads from all 16 pins on the Expander Pi digital IO port.
 The internal pull-up resistors are enabled so each pin will read
@@ -25,7 +25,7 @@ namespace Tester
 
         private void ExpanderPi_Connect()
         {
-            // Connect to the ExpanderPi Pi and wait for the Connected event
+            // Connect to the Expander Pi and wait for the Connected event
             expander.Connected += ExpanderPi_Connected;
             expander.Connect();
         }
@@ -34,7 +34,7 @@ namespace Tester
         private void ExpanderPi_Connected(object sender, EventArgs e)
         {
             // We will read the inputs 1 to 16 from the I/O bus so set port 0 and
-            // port 1 to be inputs and enable the internal pull-up resistors
+            // port 1 as inputs and enable the internal pull-up resistors
             expander.IOSetPortDirection(0, 0xFF);
             expander.IOSetPortPullups(0, 0xFF);
 

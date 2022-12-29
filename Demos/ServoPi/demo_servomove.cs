@@ -1,5 +1,5 @@
 ﻿/*
-ABElectronics Servo Pi | PWM servo move demo
+AB Electronics UK Servo Pi | PWM servo move demo
 
 This demo shows how to set the limits of movement on a servo
 and then move between those positions
@@ -16,7 +16,7 @@ namespace Tester
         // Create a new instance of the ServoPi object with an I2C address of 0x40
         ServoPi servo = new ServoPi(0x40);
 
-        // define the the servo minimum, centre and maximum limits
+        // define the servo minimum, centre and maximum limits
         private const short servoMin = 250;  // Minimum pulse length out of 4096
         private const short servoMed = 400;  // Medium pulse length out of 4096
         private const short servoMax = 500;  // Maximum pulse length out of 4096

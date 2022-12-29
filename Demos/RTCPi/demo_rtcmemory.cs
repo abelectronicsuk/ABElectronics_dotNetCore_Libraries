@@ -1,7 +1,7 @@
 ﻿/*
-ABElectronics RTC Pi | RTC memory demo
+AB Electronics UK RTC Pi | RTC memory demo
 
-This demo shows how write to and read from the RTC SRAM memory
+This demo shows how to write to and read from the RTC SRAM memory
 */
 
 using System;

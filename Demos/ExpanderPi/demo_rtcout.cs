@@ -1,5 +1,5 @@
 ﻿/*
-ABElectronics Expander Pi | RTC clock output demo
+AB Electronics UK Expander Pi | RTC clock output demo
 
 This demo shows how to enable the clock square wave output on the RTC Pi real-time clock and set the frequency
 */
@@ -23,7 +23,7 @@ namespace Tester
 
         private void ExpanderPi_Connect()
         {
-            // Connect to the ExpanderPi Pi and wait for the Connected event
+            // Connect to the Expander Pi and wait for the Connected event
             expander.Connected += ExpanderPi_Connected;
             expander.Connect();
         }

@@ -28,14 +28,14 @@ Read the raw value from the selected channel on the ADC
 SetDACVoltage(byte channel, double voltage)
 ```
 Set the voltage for the selected channel on the DAC  
-**Parameters:** channel - 1 or 2,  voltage can be between 0 and 2.047 volts  
+**Parameters:** channel - 1 or 2, the voltage can be between 0 and 2.047 volts  
 **Returns:** null 
 
 ```
 SetDACRaw(byte channel, int value)
 ```
 Set the raw value from the selected channel on the DAC  
-**Parameters:** channel - 1 or 2,value int between 0 and 4095  
+**Parameters:** channel - 1 or 2, value int between 0 and 4095  
 **Returns:** null 
 
 ## Properties:
@@ -55,15 +55,15 @@ When gain = 2 the voltage range will be 0V to VCC which is typically 3.3V on a R
 
 ## Usage
 
-To use the ADCDACPi library in your code you must first import the library dll:
+To use the ADCDACPi library in your code you must first import the library DLL:
 ```
 using ABElectronicsUK;
 ```
-Next you must initialise the ADCDACPi class:
+Next, you must initialise the ADCDACPi class:
 ```
 ABElectronicsUK.ADCDACPi adcdac = new ABElectronicsUK.ADCDACPi();
 ```
-Next we need to connect to the device and wait for the connection
+Next, we need to connect to the device and wait for the connection
 ```
 adcdac.Connect();
 
@@ -110,14 +110,14 @@ Dispose of the active I2C device
 ReadVoltage(byte channel)
 ```
 Read the voltage from the selected channel  
-**Parameters:** channel as byte - 1 to 8  
+**Parameters:** channel as a byte - 1 to 8  
 **Returns:** number as double between 0 and 5.0  
 
 ```
 ReadRaw(byte channel)
 ```
 Read the raw int value from the selected channel  
-**Parameters:** channel as byte - 1 to 8  
+**Parameters:** channel as a byte - 1 to 8  
 **Returns:** raw integer value from ADC buffer  
 
 ## Parameters:
@@ -149,24 +149,23 @@ Gets or sets the conversion mode for the ADC.
 
 ## Usage
 
-To use the ADC Pi library in your code you must first import the library dll:
+To use the ADC Pi library in your code you must first import the library DLL:
 ```
 using ABElectronicsUK;
 ```
-Next you must initialise the adc class:
+Next, you must initialise the adc class:
 ```
 ABElectronicsUK.ADCPi adc = new ADCPi(0x68, 0x69);
 ```
 The arguments are the two I2C addresses of the ADC chips. The values shown are the default addresses of the ADC board.
 
-Next we need to connect to the device and wait for the connection before setting the bit rate and gain. The sample rate can be 12, 14, 16 or 18
+Next, we need to connect to the device and wait for the connection before setting the bit rate and gain. The sample rate can be 12, 14, 16 or 18
 ```
 adc.Connect();
 
 while (!adc.IsConnected){}
 adc.BitRate = 18;
 adc.PGA = 1;
-
 ```
 
 You can now read the voltage from channel 1 with:
@@ -206,14 +205,14 @@ Dispose of the active I2C device
 ReadVoltage(byte channel)
 ```
 Read the voltage from the selected channel  
-**Parameters:** channel as byte - 1 to 8  
+**Parameters:** channel as a byte - 1 to 8  
 **Returns:** number as double between -2.048 and 2.048  
 
 ```
 ReadRaw(byte channel)
 ```
 Read the raw int value from the selected channel  
-**Parameters:** channel as byte - 1 to 8  
+**Parameters:** channel as a byte - 1 to 8  
 **Returns:** raw integer value from ADC buffer  
 
 ## Parameters:
@@ -245,24 +244,23 @@ Gets or sets the conversion mode for the ADC.
 
 ### Usage
 
-To use the ADC Differential Pi library in your code you must first import the library dll:
+To use the ADC Differential Pi library in your code you must first import the library DLL:
 ```
 using ABElectronicsUK;
 ```
-Next you must initialise the adc class:
+Next, you must initialise the adc class:
 ```
 ABElectronicsUK.ADCDifferentialPi adc = new ADCDifferentialPi(0x68, 0x69);
 ```
 The arguments are the two I2C addresses of the ADC chips. The values shown are the default addresses of the ADC Differential Pi board.
 
-Next we need to connect to the device and wait for the connection before setting the bit rate and gain. The sample rate can be 12, 14, 16 or 18
+Next, we need to connect to the device and wait for the connection before setting the bit rate and gain. The sample rate can be 12, 14, 16 or 18
 ```
 adc.Connect();
 
 while (!adc.IsConnected){}
 adc.BitRate = 18;
 adc.PGA = 1;
-
 ```
 
 You can now read the voltage from channel 1 with:
@@ -300,11 +298,11 @@ Dispose of the active device
 
 ## ADC Methods
 
-The ADC supports single ended or differential mode.
+The ADC supports single-ended or differential modes.
 
-In single ended mode each channel acts as an individual single ended input.
+In single-ended mode, each channel acts as an individual single-ended input.
   
-In differential mode the inputs are split into four differential pairs.  
+In differential mode, the inputs are split into four differential pairs.  
 Setting channel to 1 will make IN1 = IN+ and IN2 = IN-  
 Setting channel to 2 will make IN1 = IN- and IN2 = IN+  
 Setting channel to 3 will make IN3 = IN+ and IN4 = IN-  
@@ -319,7 +317,7 @@ ADCReadVoltage(byte channel, byte mode)
 ```
 Read the voltage from the selected channel on the ADC.  
 **Parameters:** channel (1 to 8)  
-**Parameters:** mode (1 = Single Ended Input, 2 = Differential Input)  
+**Parameters:** mode (1 = Single-Ended Input, 2 = Differential Input)  
 **Returns:** (double) voltage  
 
 ```
@@ -327,7 +325,7 @@ ADCReadRaw(byte channel, byte mode)
 ```
 Read the raw value from the selected channel on the ADC.  
 **Parameters:** channel (1 to 8)  
-**Parameters:** mode (1 = Single Ended Input, 2 = Differential Input)  
+**Parameters:** mode (1 = Single-Ended Input, 2 = Differential Input)  
 **Returns:** voltage  
 
 ## ADC Parameters
@@ -347,7 +345,7 @@ DACSetVoltage(byte channel, double voltage, byte gain)
 ```
 Set the voltage for the selected channel on the DAC.  
 **Parameters:** channel (1 or 2)  
-**Parameters:** voltage (Voltage will be between 0 and 2.047V when gain is 1, 0 and 4.096V when gain is 2)  
+**Parameters:** voltage (Voltage will be between 0 and 2.047V when the gain is 1, 0 and 4.096V when the gain is 2)  
 **Parameters:** gain (1 or 2)  
 **Returns:** null  
 
@@ -355,7 +353,7 @@ Set the voltage for the selected channel on the DAC.
 DACSetRaw(byte channel, short value, byte gain)
 ```
 Set the voltage for the selected channel on the DAC.  
-Voltage will be between 0 and 2.047V when gain is 1, 0 and 4.096V when gain is 2  
+The voltage will be between 0 and 2.047V when the gain is 1, 0 and 4.096V when the gain is 2  
 **Parameters:** channel (1 or 2)  
 **Parameters:** value (0 to 4095)  
 **Parameters:** gain (1 or 2)  
@@ -399,7 +397,7 @@ Write to an individual pin 1 - 16
 IOWritePort(byte port, byte value)
 ```
 Write to all pins on the selected port  
-**Parameters:** port - 0 = pins 1 to 8, port 1 = pins 9 to 16, value -  number between 0 and 255 or 0x00 and 0xFF  
+**Parameters:** port - 0 = pins 1 to 8, port 1 = pins 9 to 16, value - number between 0 and 255 or 0x00 and 0xFF  
 **Returns:** null
 ```
 IOReadPin(byte pin)
@@ -450,7 +448,7 @@ Sets the type of interrupt for each pin on the selected port
 IOSetInterruptDefaults(byte port, byte value)
 ```
 These bits set the compare value for pins configured for interrupt-on-change on the selected port.  
-If the associated pin level is the opposite from the register bit, an interrupt occurs.    
+If the associated pin level is the opposite of the register bit, an interrupt occurs.    
 **Parameters:** port 0 = pins 1 to 8, port 1 = pins 9 to 16, value: compare value  
 **Returns:** null
 ```
@@ -518,35 +516,34 @@ Takes a DateTime variable.
 ```
 byte RTCFrequency { get; set; }
 ```
-Get or set the frequency of the output pin square-wave.  
+Get or set the frequency of the output pin square wave.  
 Options are: 1 = 1Hz, 2 = 4.096KHz, 3 = 8.192KHz, 4 = 32.768KHz  
 
 ```
 bool RTCOutput { get; set; }
 ```
-Enable or disable the square-wave output on the SQW pin.  
-Set output as true of false.  Gets output state as true or false.
+Enable or disable the square wave output on the SQW pin.  
+Set output as true or false.  Gets output state as true or false.
 
 
 ## Usage:
 
-To use the Expander Pi library in your code you must first import the library dll:
+To use the Expander Pi library in your code you must first import the library DLL:
 ```
 using ABElectronicsUK;
 ```
-Next you must initialise the ExpanderPi class:
+Next, you must initialise the ExpanderPi class:
 ```
 ABElectronicsUK.ExpanderPi expi = new ABElectronicsUK.ExpanderPi();
 ```
 
-Next we need to connect to the device and wait for the connection before setting the digital IO ports to be inputs
+Next, we need to connect to the device and wait for the connection before setting the digital IO ports to be inputs
 ```
 expi.Connect();
 
 while (!expi.IsConnected){}
 expi.IOSetPortDirection(0, 0xFF);
 expi.IOSetPortDirection(1, 0xFF);
-
 ```
 
 You can now read the input status from pin 1 on the digital IO bus with:
@@ -735,7 +732,7 @@ Sets the type of interrupt for each pin on the selected port
 SetInterruptDefaults(byte port, byte value)
 ```
 These bits set the compare value for pins configured for interrupt-on-change on the selected port.  
-If the associated pin level is the opposite from the register bit, an interrupt occurs.    
+If the associated pin level is the opposite of the register bit, an interrupt occurs.    
 **Parameters:** port 0 = pins 1 to 8, port 1 = pins 9 to 16, value: compare value  
 **Returns:** null
 ```
@@ -773,24 +770,23 @@ Set the interrupts A and B to 0
 **Returns:** null
 ## Usage
 
-To use the IO Pi library in your code you must first import the library dll:
+To use the IO Pi library in your code you must first import the library DLL:
 ```
 using ABElectronicsUK;
 ```
-Next you must initialise the io class:
+Next, you must initialise the io class:
 ```
 ABElectronicsUK.IOPi bus1 = new ABElectronicsUK.IOPi(0x20);
 ```
-The argument is the I2C addresses of the IO chip. The value shown are the default addresses of the IO board which are 0x20 and 0x21.
+The argument is the I2C addresses of the IO chip. The value shown is the default addresses of the IO board which are 0x20 and 0x21.
 
-Next we need to connect to the device and wait for the connection before setting ports to be inputs
+Next, we need to connect to the device and wait for the connection before setting ports to be inputs
 ```
 bus1.Connect();
 
 while (!bus1.IsConnected){}
 bus1.SetPortDirection(0, 0xFF);
 bus1.SetPortDirection(1, 0xFF);
-
 ```
 
 You can now read the input status from channel 1 with:
@@ -852,36 +848,35 @@ Takes a DateTime variable.
 ```
 byte Frequency { get; set; }
 ```
-Get or set the frequency of the output pin square-wave.  
+Get or set the frequency of the output pin square wave.  
 Options are: 1 = 1Hz, 2 = 4.096KHz, 3 = 8.192KHz, 4 = 32.768KHz  
 
 ```
 bool Output { get; set; }
 ```
-Enable or disable the square-wave output on the SQW pin.  
-Set output as true of false.  Gets output state as true or false.  
+Enable or disable the square wave output on the SQW pin.  
+Set output as true or false.  Gets output state as true or false.  
 
 
 ## Usage
 
-To use the RTC Pi library in your code you must first import the library dll:
+To use the RTC Pi library in your code you must first import the library DLL:
 ```
 using ABElectronicsUK;
 ```
-Next you must initialise the rtc class:
+Next, you must initialise the rtc class:
 ```
 ABElectronicsUK.RTCPi rtc = new ABElectronicsUK.RTCPi();
 ```
-Next we need to connect to the device and wait for the connection
+Next, we need to connect to the device and wait for the connection
 ```
 rtc.Connect();
 
 while (!rtc.IsConnected)
 {
 }
-
 ```
-You can set the date and time from the RTC chip to be the 25th December 2015 at 6 AM with:
+You can set the date and time from the RTC chip to be the 25th of December 2015 at 6 AM with:
 ```
 DateTime newdate = new DateTime(2015, 12, 25, 06, 00, 00);
 rtc.Date = newdate;
@@ -931,41 +926,41 @@ The output frequency is programmable from a typical 40Hz to 1000Hz.
 SetPWM(byte channel, short on, short off) 
 ```
 Set the PWM output on a single channel  
-**Parameters:** channel - 1 to 16, on - time period 0 to 4095, off - time period 0 to 4095   
+**Parameters:** channel - 1 to 16, on - period 0 to 4095, off - period 0 to 4095   
 **Returns:** null  
 
 ```
 SetPWMOnTime(byte channel, short on)
 ```
 Set the output on time on a single channel  
-**Parameters:** channel - 1 to 16, on - time period 0 to 4095  
+**Parameters:** channel - 1 to 16, on - period 0 to 4095  
 **Returns:** null  
 
 ```
 SetPWMOnTime(byte channel, short off)
 ```
 Set the output off time on a single channel  
-**Parameters:** channel - 1 to 16, off - time period 0 to 4095  
+**Parameters:** channel - 1 to 16, off - period 0 to 4095  
 **Returns:** null  
 
 ```
 SetAllPwm( on, off) 
 ```
 Set the output on all channels  
-**Parameters:** on - time period, off - time period  
+**Parameters:** on - period 0 to 4095, off - period 0 to 4095  
 **Returns:** null  
 
 ```
 OutputEnable()
 ```
-Enable the output via OE pin. Only used when the OE jumper is joined.  
+Enable the output via the OE pin. Only used when the OE jumper is joined.  
 **Parameters:** null  
 **Returns:** null  
 
 ```
 OutputDisable()
 ```
-Disable the output via OE pin. Only used when the OE jumper is joined.  
+Disable the output via the OE pin. Only used when the OE jumper is joined.  
 **Parameters:** null  
 **Returns:** null  
 
@@ -1004,7 +999,7 @@ true = invert, false = normal.
 ```
 byte OutputEnablePin { get; set; }
 ```
-Set the GPIO pin for the output enable function.  
+Set the GPIO pin for the output-enable function.  
 The default GPIO pin 4 is not supported in .net Core so the OE pad will need to be connected to a different GPIO pin.  
 
 ```
@@ -1017,30 +1012,28 @@ Get true = sleeping, false = awake.
 
 ## Usage
 
-To use the ServoPi Pi library in your code you must first import the library dll:
+To use the ServoPi Pi library in your code you must first import the library DLL:
 ```
 using ABElectronicsUK;
 ```
-Next you must initialise the ServoPi class:
+Next, you must initialise the ServoPi class:
 ```
 ABElectronicsUK.ServoPi servo = new ABElectronicsUK.ServoPi(0x40);
 ```
 The argument is the I2C addresses of the Servo Pi chip.
 
-Next we need to connect to the device and wait for the connection
+Next, we need to connect to the device and wait for the connection
 ```
 servo.Connect();
 
 while (!servo.IsConnected){}
-
 ```
-Set PWM frequency to 60 Hz and enable the output
+Set the PWM frequency to 60 Hz and enable the output
 ```
 servo.SetPWMFreqency(60);                       
-
 ```
-**Optional**
-You can set the enable pin to use the output enable functions and the enable and disable the output. 
+**Optional**  
+You can set the enable pin to use the output enable functions and enable or disable the output. 
 The default GPIO pin 4 is not supported in Windows 10 IOT and so the OE pad will need to be connected to a different GPIO pin to use this functionality.
 
 ```

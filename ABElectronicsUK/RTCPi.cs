@@ -37,7 +37,7 @@ namespace ABElectronicsUK
         System.Runtime.InteropServices.SafeHandle handle = new Microsoft.Win32.SafeHandles.SafeFileHandle(IntPtr.Zero, true);
 
         /// <summary>
-        ///     Create an instance of a RTC Pi bus.
+        ///     Create an instance of an RTC Pi bus.
         /// </summary>
         public RTCPi()
         {
@@ -89,13 +89,13 @@ namespace ABElectronicsUK
         }
 
         /// <summary>
-        ///     Event occurs when connection is made.
+        ///     Event occurs when a connection is made.
         /// </summary>
         public event EventHandler Connected;
 
 
         /// <summary>
-        ///     Converts BCD format to integer.
+        ///     Converts BCD to integer format.
         /// </summary>
         /// <param name="x">BCD formatted byte</param>
         /// <returns></returns>
@@ -163,7 +163,7 @@ namespace ABElectronicsUK
 
         /// <summary>
         /// Enable or disable the clock output pin.
-        /// Set output as true of false.  Gets output state as true or false.
+        /// Set output as true or false.  Gets output state as true or false.
         /// </summary>
         public bool Output
         {
@@ -191,7 +191,7 @@ namespace ABElectronicsUK
         }
 
         /// <summary>
-        ///     Get or set the frequency of the output pin square-wave.
+        ///     Get or set the frequency of the output pin square wave.
         ///     Options are: 1 = 1Hz, 2 = 4.096KHz, 3 = 8.192KHz, 4 = 32.768KHz
         /// </summary>
         /// 
@@ -200,7 +200,7 @@ namespace ABElectronicsUK
             get
             {
                 CheckConnected();
-                // get the control register from the rtc
+                // get the control register from the RTC
                 config = helper.ReadI2CByte(i2cbus, CONTROL);
 
                 // extract bits rs0 and rs1

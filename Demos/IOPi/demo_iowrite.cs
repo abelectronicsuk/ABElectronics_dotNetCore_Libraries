@@ -1,5 +1,5 @@
 ﻿/*
-ABElectronics IO Pi | Digital I/O Write Demo
+AB Electronics UK IO Pi | Digital I/O Write Demo
 
 This example uses the WritePin and WritePort methods to switch the pins
 on and off on the I/O bus.
@@ -54,7 +54,7 @@ namespace Tester
                 // turn off all of the pins on bank 1
                 iobus.WritePort(1, 0x00);
 
-                // now turn on all of the leds in turn by writing to one pin at a time
+                // now turn on all of the LEDs in turn by writing to one pin at a time
                 iobus.WritePin(9, true);
 
                 Thread.Sleep(100); // wait 100ms
@@ -85,7 +85,7 @@ namespace Tester
 
                 iobus.WritePin(16, true);
 
-                // and turn off all of the leds in turn by writing to one pin at a time
+                // and turn off all of the LEDs in turn by writing to one pin at a time
                 iobus.WritePin(9, false);
 
                 Thread.Sleep(100); // wait 100ms

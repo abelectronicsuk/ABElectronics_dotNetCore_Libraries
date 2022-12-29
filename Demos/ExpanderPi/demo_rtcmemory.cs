@@ -1,5 +1,5 @@
 ﻿/*
-ABElectronics Expander Pi | RTC memory demo
+AB Electronics UK Expander Pi | RTC memory demo
 
 This demo shows how write to and read from the RTC SRAM memory
 */
@@ -24,7 +24,7 @@ namespace Tester
 
         private void ExpanderPi_Connect()
         {
-            // Connect to the ExpanderPi Pi and wait for the Connected event
+            // Connect to the Expander Pi and wait for the Connected event
             expander.Connected += ExpanderPi_Connected;
             expander.Connect();
         }

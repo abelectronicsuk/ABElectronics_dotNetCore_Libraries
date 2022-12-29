@@ -1,5 +1,5 @@
 ﻿/*
-ABElectronics Expander Pi | DAC sine wave generator demo
+AB Electronics UK Expander Pi | DAC sine wave generator demo
 
 this demo generates a sine wave on the DAC output
 */
@@ -23,7 +23,7 @@ namespace Tester
 
         private void ExpanderPi_Connect()
         {
-            // Connect to the ExpanderPi Pi and wait for the Connected event
+            // Connect to the Expander Pi and wait for the Connected event
             expander.Connected += ExpanderPi_Connected;
             expander.Connect();
         }

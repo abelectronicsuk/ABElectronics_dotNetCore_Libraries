@@ -1,5 +1,5 @@
 ﻿/*
-ABElectronics IO Pi | Digital I/O Read Demo
+AB Electronics UK IO Pi | Digital I/O Read Demo
 
 This example reads from all 16 pins on both buses on the IO Pi Plus.
 The internal pull-up resistors are enabled so each pin will read
@@ -41,7 +41,7 @@ namespace Tester
         private void IO2_Connected(object sender, EventArgs e)
         {
             // We will read the inputs 1 to 16 from the I/O bus so set port 0 and
-            // port 1 to be inputs and enable the internal pull-up resistors
+            // port 1 as inputs and enable the internal pull-up resistors
             iobus1.SetPortDirection(0, 0xFF);
             iobus1.SetPortPullups(0, 0xFF);
 

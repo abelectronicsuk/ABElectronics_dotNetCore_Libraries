@@ -1,5 +1,5 @@
 ﻿/*
-AB Electronics Expander Pi | ADC Speed Demo
+AB Electronics UK Expander Pi | ADC Speed Demo
 
 this demo tests the maximum sample speed for the ADC
 */
@@ -23,7 +23,7 @@ namespace Tester
 
         private void ExpanderPi_Connect()
         {
-            // Connect to the ExpanderPi Pi and wait for the Connected event
+            // Connect to the Expander Pi and wait for the Connected event
             expander.Connected += ExpanderPi_Connected;
             expander.Connect();
         }
@@ -31,7 +31,7 @@ namespace Tester
 
         private void ExpanderPi_Connected(object sender, EventArgs e)
         {
-            // set the reference voltage to the on board voltage reference of 4.096V.
+            // set the reference voltage to the onboard voltage reference of 4.096V.
             expander.ADCReferenceVoltage = 4.096;
 
             Int32 counter = 1;
@@ -48,7 +48,7 @@ namespace Tester
 
             while (counter < totalsamples)
             {
-                // read the voltage from channel 1 and display on the screen
+                // read the voltage from channel 1 and display it on the screen
                 readarray[counter] = expander.ADCReadVoltage(1, 1);
 
                 counter += 1;

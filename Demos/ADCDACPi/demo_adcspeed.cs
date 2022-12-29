@@ -1,5 +1,5 @@
 ﻿/*
-AB Electronics ADC-DAC Pi 2-Channel ADC, 2-Channel DAC | ADC Speed Demo
+AB Electronics UK ADC DAC Pi 2-Channel ADC, 2-Channel DAC | ADC Speed Demo
 
 this demo tests the maximum sample speed for the ADC
 */
@@ -12,7 +12,7 @@ namespace Tester
 {
     class Program
     {
-        // Create a new instance of teh ADCDACPi object
+        // Create a new instance of the ADCDACPi object
         ADCDACPi adcdac = new ADCDACPi();
 
         static void Main(string[] args)
@@ -24,7 +24,7 @@ namespace Tester
 
         private void AdcDac_Connect()
         {
-            // Connect to the ADCDAC Pi and wait for the Connected event
+            // Connect to the ADC DAC Pi and wait for the Connected event
             adcdac.Connected += AdcDac_Connected;
             adcdac.Connect();
         }
@@ -50,7 +50,7 @@ namespace Tester
 
             while (counter < totalsamples)
             {
-                // read the voltage from channel 1 and display on the screen
+                // read the voltage from channel 1 and display it on the screen
                 readarray[counter] = adcdac.ReadADCVoltage(1);
 
                 counter += 1;

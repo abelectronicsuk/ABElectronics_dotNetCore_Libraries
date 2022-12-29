@@ -9,7 +9,7 @@ namespace ABElectronicsUK
     /// </summary>
     public class IOPi : IDisposable
     {
-        // Define registers values from datasheet
+        // Define registers values from the datasheet
 
         /// <summary>
         ///     IO direction A - 1= input 0 = output
@@ -188,7 +188,7 @@ namespace ABElectronicsUK
                     // Set IsConnected to true and fire the Connected event handler
                     IsConnected = true;
 
-                    // i2c bus is connected so set up the initial configuration for the IO Pi
+                    // i2c bus is connected, so set up the initial configuration for the IO Pi
                     helper.WriteI2CByte(i2cbus, IOCON, config);
                     portaval = helper.ReadI2CByte(i2cbus, GPIOA);
                     portbval = helper.ReadI2CByte(i2cbus, GPIOB);
@@ -213,7 +213,7 @@ namespace ABElectronicsUK
         }
 
         /// <summary>
-        ///     Event occurs when connection is made.
+        ///     Event occurs when a connection is made.
         /// </summary>
         public event EventHandler Connected;
 
@@ -565,7 +565,7 @@ namespace ABElectronicsUK
         }
 
         /// <summary>
-        ///     This sets the INT output pins to be active driver or open-drain.
+        ///     This sets the INT output pins to be active-driver or open-drain.
         ///     Setting to open-drain overrides the interrupt polarity.
         /// </summary>
         /// <param name="value">1 = Open Drain. 0 = Active Driver.</param>

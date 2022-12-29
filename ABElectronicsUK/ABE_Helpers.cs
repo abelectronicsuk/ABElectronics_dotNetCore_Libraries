@@ -4,7 +4,7 @@ using System.Device.I2c;
 namespace ABElectronicsUK
 {
 	/// <summary>
-	///     Helpers for the ABElectronics library.
+	///     Helpers for the AB Electronics UK library.
 	/// </summary>
 	internal class ABE_Helpers
 	{
@@ -24,7 +24,7 @@ namespace ABElectronicsUK
 				//left-shift 1, then bitwise OR
 				return (byte) (value | (1 << position));
 			}
-			//left-shift 1, then take complement, then bitwise AND
+			//left-shift 1, take compliment, then bitwise AND
 			return (byte) (value & ~(1 << position));
 		}
 
@@ -42,7 +42,7 @@ namespace ABElectronicsUK
 				//left-shift 1, then bitwise OR
 				return value | (1 << position);
 			}
-			//left-shift 1, then take complement, then bitwise AND
+			//left-shift 1, take compliment, then bitwise AND
 			return value & ~(1 << position);
 		}
 

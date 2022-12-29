@@ -1,5 +1,5 @@
 ﻿/*
-ABElectronics ADC Pi 8-Channel ADC demo
+AB Electronics UK ADC Pi 8-Channel ADC demo
 
 Initialise the ADC device using the default addresses and sample rate,
 change this value if you have changed the address selection jumpers
@@ -44,7 +44,7 @@ namespace Tester
 
             while (true)
             {
-                // read from adc channels and print to screen
+                // read from ADC channels and print to screen
                 Console.WriteLine("Channel 1: " + adc.ReadVoltage(1).ToString("N3"));
                 Console.WriteLine("Channel 2: " + adc.ReadVoltage(2).ToString("N3"));
                 Console.WriteLine("Channel 3: " + adc.ReadVoltage(3).ToString("N3"));

@@ -1,5 +1,5 @@
 ﻿/*
-ABElectronics RTC Pi | RTC clock output demo
+AB Electronics UK RTC Pi | RTC clock output demo
 
 This demo shows how to enable the clock square wave output on the RTC Pi real-time clock and set the frequency
 */

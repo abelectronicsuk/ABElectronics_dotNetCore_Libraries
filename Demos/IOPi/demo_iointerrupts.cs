@@ -1,5 +1,5 @@
 ﻿/*
-ABElectronics IO Pi | - IO Interrupts Demo
+AB Electronics UK IO Pi | - IO Interrupts Demo
 
 This example shows how to use the interrupt methods on the IO port.
 Both ports will be set as inputs with pull-ups enabled and the 
@@ -37,7 +37,7 @@ namespace Tester
 
         private void IO_Connected(object sender, EventArgs e)
         {
-            // Set all pins on the IO bus to be inputs with internal pull-ups enabled.
+            // Set all pins on the IO bus as inputs with internal pull-ups enabled.
 
             iobus.SetPortPullups(0, 0xFF);
             iobus.SetPortPullups(1, 0xFF);
@@ -48,7 +48,7 @@ namespace Tester
             iobus.InvertPort(0, 0xFF);
             iobus.InvertPort(1, 0xFF);
 
-            // Set the interrupt polarity to be active high and mirroring disabled, so
+            // Set the interrupt polarity as active high and mirroring disabled, so
             // pins 1 to 8 trigger INT A and pins 9 to 16 trigger INT B
             iobus.SetInterruptPolarity(1);
             iobus.MirrorInterrupts(0);
@@ -57,7 +57,7 @@ namespace Tester
             iobus.SetInterruptDefaults(0, 0x00);
             iobus.SetInterruptDefaults(1, 0x00);
 
-            // Set the interrupt type to be 1 for ports A and B so an interrupt is
+            // Set the interrupt type as 1 for ports A and B so an interrupt is
             // fired when the pin matches the default value
             iobus.SetInterruptType(0, 0xFF);
             iobus.SetInterruptType(1, 0xFF);
@@ -75,7 +75,7 @@ namespace Tester
             {
 
                 // read the interrupt status for each port.  
-                // If the status is not 0 then an interrupt has occured on one of the pins 
+                // If the status is not 0 then an interrupt has occurred on one of the pins 
                 // so read the value from the interrupt capture.
 
                 if (iobus.ReadInterruptStatus(0) != 0)

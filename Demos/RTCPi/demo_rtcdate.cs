@@ -1,5 +1,5 @@
 ﻿/*
-ABElectronics RTC Pi |  Date Demo
+AB Electronics UK RTC Pi |  Date Demo
 
 This demo shows how to set the current time to the RTC and read the date and time on the RTC Pi real-time clock at 1 second intervals
 */

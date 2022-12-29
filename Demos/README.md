@@ -5,4 +5,4 @@ AB Electronics .Net Core Libraries Demo files
 
 Each folder contains demonstration files showing how to use the functionality of each expansion board.
 
-The Tester folder contains a console project which can be used to compile each demo file into an program that can be executed on a Raspberry Pi.
+The Tester folder contains a console project which can be used to compile each demo file into a program that can be executed on a Raspberry Pi.
