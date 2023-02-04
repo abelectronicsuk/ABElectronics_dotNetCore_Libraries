@@ -360,6 +360,9 @@ The voltage will be between 0 and 2.047V when the gain is 1, 0 and 4.096V when t
 **Returns:** null
 
 ## IO Methods
+
+**Note:** Microchip recommends that pin 8 (GPA7) and pin 16 (GPB7) are used as outputs only.  This change was made for revision D MCP23017 chips manufactured after June 2020. See the [MCP23017 datasheet](https://www.abelectronics.co.uk/docs/pdf/microchip-mcp23017.pdf) for more information.
+
 ```
 IOSetPinDirection(byte pin, bool direction)  
 ```
@@ -621,6 +624,8 @@ GPIO pin for resetting the I2C Switch
 This class contains methods for use with the IO Pi, IO Pi Plus and IO Pi Zero from  
 https://www.abelectronics.co.uk/p/54/io-pi-plus   
 https://www.abelectronics.co.uk/p/71/io-pi-zero  
+
+**Note:** Microchip recommends that pin 8 (GPA7) and pin 16 (GPB7) are used as outputs only.  This change was made for revision D MCP23017 chips manufactured after June 2020. See the [MCP23017 datasheet](https://www.abelectronics.co.uk/docs/pdf/microchip-mcp23017.pdf) for more information.
 
 ## Methods:
 ```
